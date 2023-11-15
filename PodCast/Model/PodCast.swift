@@ -1,8 +1,14 @@
-//
-//  PodCast.swift
-//  PodCast
-//
-//  Created by Kelvin Gao  on 26/10/2566 BE.
-//
-
 import Foundation
+import UIKit
+
+struct PodCast : Codable {
+    var results : [Results]
+}
+
+struct Results : Codable {
+    var artistName : String?
+    var collectionName : String?
+    var artworkUrl60 : String?
+    var trackCount : Int?
+    var feedUrl : String?
+}

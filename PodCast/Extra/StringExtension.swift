@@ -1,8 +1,7 @@
-//
-//  StringExtension.swift
-//  PodCast
-//
-//  Created by Kelvin Gao  on 29/10/2566 BE.
-//
-
 import Foundation
+
+extension String {
+    func secureHttp() -> String {
+        return self.contains("https") ? self : self.replacingOccurrences(of: "http", with: "https")
+    }
+}

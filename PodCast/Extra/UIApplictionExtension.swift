@@ -1,8 +1,8 @@
-//
-//  UIApplictionExtension.swift
-//  PodCast
-//
-//  Created by Kelvin Gao  on 13/11/2566 BE.
-//
-
 import Foundation
+import UIKit
+
+extension UIApplication {
+    static func mainTabController() -> MainTabController {
+        return shared.keyWindow?.rootViewController as! MainTabController
+    }
+}
